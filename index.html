@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Datetime</title> 
+        <link rel="stylesheet" href="/css/main.css" type="text/css"/>
+        <script src="./src/main.js" type="module"></script> 
+        <script type = "text/javascript" src="./src/timer.js"></script>
+
+    </head> 
+    <body> 
+
+        <button id="showHideTimeCalc" class="time_calc-btn">Нажми для открытия/закрытия таймера времени</button>
+        <button id="showHideDateCalc" class="date_calc-btn">Нажми для открытия/закрытия калькулятора дат</button>
+
+        <div id="time_calc" class="inner calc hidden">
+            <h1 class="">Таймер времени</h1>
+            <p>Введите значение минут </p> 
+            <input type="text" name="time" id="time_input">
+            <input type="button" value="Начать" onclick="start()">
+            <input type="button" value="Пауза" onclick="pause()">
+            <input type="button" value="Остановить/Сбросить" onclick="reset()">
+            <h2 id="timer_div"></h2>
+        </div>
+
+        <div id="date_calc" class="calc hidden">   
+            <form id="datecalc"> 
+                <h3>Калькулятор дат</h3> 
+                <label> 
+                    <strong>Первая дата:</strong> 
+                    <input type="date" name="firstDate"/> 
+                </label> 
+                <label> 
+                    <strong>Вторая дата:</strong> 
+                    <input type="date" name="secondDate"/> 
+                </label> 
+                <button type="submit">Расчитать промежуток</button> 
+                <p id="datecalc__result"></p> 
+            </form> 
+        </div>
+        
+    </body> 
+</html>
