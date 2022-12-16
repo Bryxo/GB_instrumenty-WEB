@@ -1,0 +1,16 @@
+.hidden {
+  display: none;
+} 
+.show {
+  display: block;
+}
+
+.calc {
+  color: rgb(10, 0, 121);
+}
+.time_calc-btn {
+  color: blueviolet;
+}
+.date_calc-btn {
+  color: rgb(33, 182, 205);
+}
